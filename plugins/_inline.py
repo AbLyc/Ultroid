@@ -187,17 +187,6 @@ async def uptd_plugin(event):
     buttons = []
     if INLINE_PIC:
         data = f"sndplug_{key}_{file}"
-        if index is not None:
-            data += f"|{index}"
-        buttons.append(
-            [
-                Button.inline(
-                    "« Sᴇɴᴅ Pʟᴜɢɪɴ »",
-                    data=data,
-                )
-            ]
-        )
-    data = f"uh_{key}_"
     if index is not None:
         data += f"|{index}"
     buttons.append(
