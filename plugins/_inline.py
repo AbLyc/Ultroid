@@ -183,7 +183,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© Join @TeamUltroid"
+    help_ += "\n© Join @SisTan_KinG"
     buttons = []
     if INLINE_PIC:
         data = f"sndplug_{key}_{file}"
@@ -443,7 +443,7 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ultroid Op",
+                            title="SisSeLf Op",
                             text=txt,
                             description="@TheUltroid",
                             buttons=btn,
@@ -458,10 +458,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Ultroid Op",
+                        title="SisSeLf Op",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@SisTan_KinG",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
@@ -473,7 +473,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("Ultroid Op", text=txt, link_preview=False, buttons=btn)
+        await builder.article("SisSeLf Op", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 
